@@ -1,0 +1,447 @@
+/* ------------------ CSS-Змінні ------------------ */
+
+:root {
+  --logo-color-web: #4d5ae5;
+  --logo-color-studio-dark: #2e2f42;
+  --logo-color-studio-white: #f4f4fd;
+  --hero-background-color: #2e2f42;
+  --hero-title-color: #ffffff;
+  --btn-color: #4d5ae5;
+  --btn-name-color: #ffffff;
+  --btn-active-color: #404bbf;
+  --iris-color: #4d5ae5;
+  --navy-blue-color: #2e2f42;
+  --green-color: #31d0aa;
+  --slate-color: #434455;
+  --light-slate-color: #8e8f99;
+  --cornflower-color: #e7e9fc;
+  --cloud-color: #f4f4fd;
+}
+
+/* ------------------ Глобальні стилі ------------------ */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--slate-color);
+  background-color: var(--hero-title-color);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ------------------ HEADER ------------------ */
+
+.header {
+  background: var(--hero-title-color);
+  border-bottom: 1px solid var(--cornflower-color);
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  padding-top: 24px;
+  margin-right: 76px;
+  padding-bottom: 24px;
+  display: inline-flex;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-color-studio-dark);
+}
+
+.header-logo-web {
+  color: var(--logo-color-web);
+}
+
+.header-navigation {
+  display: flex;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-list-item {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+}
+
+.header-contact {
+  display: flex;
+  gap: 40px;
+  margin-left: auto;
+}
+
+.header-contact-item {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  color: var(--slate-color);
+}
+
+/* ------------------- STUDIO-MAIN ------------------ */
+
+/* --- hero --- */
+
+.hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  margin: auto;
+  text-align: center;
+
+  background-color: var(--hero-background-color);
+}
+
+.hero-title {
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--hero-title-color);
+}
+
+.hero-btn {
+  min-width: 169px;
+  height: 56px;
+
+  background: var(--btn-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.04em;
+  color: var(--btn-name-color);
+}
+
+/* --- section one --- */
+
+.s-one {
+  padding: 120px 0;
+}
+
+.s-one-list {
+  display: flex;
+  gap: 24px;
+}
+
+.s-one-item {
+  max-width: 264px;
+}
+
+.s-one-title {
+  margin-bottom: 8px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+}
+
+.s-one-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate-color);
+}
+
+/* --- section two --- */
+
+.s-two {
+  padding-bottom: 120px;
+}
+
+.s-two-list {
+  display: flex;
+  gap: 24px;
+}
+
+.s-two-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.s-two-title {
+  text-align: center;
+  margin-bottom: 72px;
+
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue-color);
+}
+
+/* --- section three --- */
+
+.s-three {
+  padding: 120px 0;
+  background: var(--cloud-color);
+}
+
+.s-three-title {
+  text-align: center;
+  margin-bottom: 72px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue-color);
+}
+
+.s-tree-list {
+  display: flex;
+  gap: 24px;
+}
+
+.s-three-item {
+  width: calc((100% - 72px) / 4);
+  text-align: center;
+
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--hero-title-color);
+}
+
+.s-three-img {
+  margin-bottom: 32px;
+}
+
+.s-three-name {
+  margin-bottom: 8px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+}
+
+.s-three-text {
+  margin-bottom: 32px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate-color);
+}
+
+/* ------------------ FOOTER ------------------- */
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: var(--hero-background-color);
+}
+.footer-logo {
+  margin-bottom: 16px;
+  display: inline-flex;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--logo-color-studio-dark);
+}
+
+.footer-logo-studio {
+  color: var(--logo-color-studio-white);
+}
+
+.footer-text {
+  max-width: 264px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cornflower-color);
+}
+
+/* ------------------ PORTFOLIO MAIN ------------------ */
+
+/* --- section one --- */
+
+.p-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.p-btn-list {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 72px;
+  justify-content: center;
+}
+
+.p-btn {
+  padding: 12px 24px;
+  border: 1px solid var(--cornflower-color);
+  border-radius: 4px;
+
+  background: var(--cloud-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--btn-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.p-img-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.p-img-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.p-img-content {
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-bottom: 32px;
+  border: 1px solid var(--cornflower-color);
+  border-top: none;
+}
+
+.p-name {
+  margin-bottom: 8px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+}
+
+.p-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate-color);
+}
+
+.header-list-item:hover,
+.header-list-item:focus,
+.header-contact-item:hover,
+.header-contact-item:focus {
+  color: var(--iris-color);
+}
+
+.p-btn:hover,
+.p-btn:focus,
+.hero-btn:hover,
+.hero-btn:focus {
+  background: var(--btn-active-color);
+  color: var(--btn-name-color);
+}
