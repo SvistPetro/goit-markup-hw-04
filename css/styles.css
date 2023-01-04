@@ -179,7 +179,7 @@ a {
     url(../images/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1440px;
+  background-size: 1440px 600px;
 
   /* background-color: var(--hero-background-color); */
 }
